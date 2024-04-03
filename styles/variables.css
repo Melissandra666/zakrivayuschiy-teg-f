@@ -1,1 +1,72 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-family: 'Inter', sans-serif;
+    --fantasy-font-family: 'Press Start 2P', fantasy;
+    --background-color: #d3d3d3;
+    --block-color: #ffffff;
+    --background-image: 
+        repeating-linear-gradient(
+        to left,
+        var(--background-color-start) 0 2px,
+        transparent 2px 4px),
+        repeating-linear-gradient(
+        var(--background-color-start) 0 2px, 
+        transparent 2px 4px),
+        linear-gradient(
+        var(--background-color-start) 0.01%, 
+      var(--background-color-end));
+    --main-text-color: #000000;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --fill: #ffffff;
+    --background-color-start: #e7e7e7;
+    --background-color-end: #1a1a1a;
+}
+
+
+@media (375px <= width < 1440px) {
+    .header {
+        min-width: 90%;
+    }
+  }
+  
+@media (width <= 375px) {
+    .header {
+        min-width: 100%;
+    }
+}
+
+@media (375px <= width < 1440px) {
+    .header__title {
+        font-size: 18px;
+    }
+  }
+  
+@media (width <= 375px) {
+    .header__title {
+        font-size: 14px;
+    }
+}
+
+
+@media (375px <= width < 1440px) {
+    .section {
+        min-width: 90%;
+    }
+  }
+  
+@media (width <= 375px) {
+    .section{
+        min-width: 100%
+    }
+}
+
+
+@supports (text-stroke: 1px var(--block-color)) or
+  (-webkit-text-stroke: 1px var(--block-color)) {
+  .image-logo {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--block-color);
+    text-stroke: 1px var(--block-color);
+  }
+}
