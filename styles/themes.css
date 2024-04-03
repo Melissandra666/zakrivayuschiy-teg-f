@@ -8,16 +8,16 @@
     --background-color: #d3d3d3;
     --block-color: #ffffff;
     --background-image: 
-    repeating-linear-gradient(
-      to left,
-      var(--background-color-start) 0 2px,
-      transparent 2px 4px),
-    repeating-linear-gradient(
-      var(--background-color-start) 0 2px, 
-      transparent 2px 4px),
-    linear-gradient(
-      var(--background-color-start) 0.01%, 
-      var(--background-color-end));
+        repeating-linear-gradient(
+        to left,
+        var(--background-color-start) 0 2px,
+        transparent 2px 4px),
+        repeating-linear-gradient(
+        var(--background-color-start) 0 2px, 
+        transparent 2px 4px),
+        linear-gradient(
+        var(--background-color-start) 0.01%, 
+        var(--background-color-end));
     --main-text-color: #000000;
     --font-weight-bold: 700;
     --font-weight-regular: 400;
@@ -30,20 +30,44 @@
     --background-color: #000000;
     --block-color: #000000;
     --background-image: 
-    repeating-linear-gradient(
-      to left,
-      var(--background-color-start) 0 2px,
-      transparent 2px 4px),
-    repeating-linear-gradient(
-      var(--background-color-start) 0 2px, 
-      transparent 2px 4px),
-    linear-gradient(
-      var(--background-color-start) 0.01%, 
-      var(--background-color-end));
+        repeating-linear-gradient(
+        to left,
+        var(--background-color-start) 0 2px,
+        transparent 2px 4px),
+        repeating-linear-gradient(
+        var(--background-color-start) 0 2px, 
+        transparent 2px 4px),
+        linear-gradient(
+        var(--background-color-start) 0.01%, 
+        var(--background-color-end));
     --main-text-color: #00CC14;
     --font-weight-bold: 785;
     --font-weight-regular: 465;
     --fill: #00CC14;
     --background-color-start: #007f0c;
     --background-color-end: #004306;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000000;
+        --block-color: #000000;
+        --background-image: 
+            repeating-linear-gradient(
+            to left,
+            var(--background-color-start) 0 2px,
+            transparent 2px 4px),
+            repeating-linear-gradient(
+            var(--background-color-start) 0 2px, 
+            transparent 2px 4px),
+            linear-gradient(
+            var(--background-color-start) 0.01%, 
+            var(--background-color-end));
+        --main-text-color: #00CC14;
+        --font-weight-bold: 785;
+        --font-weight-regular: 465;
+        --fill: #00CC14;
+        --background-color-start: #007f0c;
+        --background-color-end: #004306;
+    }
 }
