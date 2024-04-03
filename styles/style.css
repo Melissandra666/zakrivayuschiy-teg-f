@@ -15,8 +15,6 @@
 */
 
 .page {
-  min-inline-size: 320px;
-  min-block-size: 100dvb;
   color: var(--main-text-color);
   background-color: var(--background-color);
   background-image: var(--background-image);
@@ -36,18 +34,6 @@
   background-color: var(--block-color);
   border: 2px solid var(--main-text-color);
   padding-top: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-}
-
-@media (375px <= width < 1440px) {
-  .header {
-    min-width: 90%;
-  }
-}
-
-@media (width <= 375px) {
-  .header {
-    min-width: 100%;
-  }
 }
 
 .header__link {
@@ -70,18 +56,6 @@
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 25px;
-}
-
-@media (375px <= width < 1440px) {
-  .header__title {
-    font-size: 18px;
-  }
-}
-
-@media (width <= 375px) {
-  .header__title {
-    font-size: 14px;
-  }
 }
 
 .theme-menu__list {
@@ -171,18 +145,6 @@
   gap: 50px;
 }
 
-@media (375px <= width < 1440px) {
-  .section {
-    min-width: 90%;
-  }
-}
-
-@media (width <= 375px) {
-  .section{
-    min-width: 100%
-  }
-}
-
 .card {
   background-color: var(--block-color);
   border: 2px solid var(--main-text-color);
@@ -228,15 +190,6 @@
   position: absolute;
   right: 25px;
   top: 27px;
-}
-
-@supports (text-stroke: 1px var(--block-color)) or
-  (-webkit-text-stroke: 1px var(--block-color)) {
-  .image-logo {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--block-color);
-    text-stroke: 1px var(--block-color);
-  }
 }
 
 .section_card__text {
