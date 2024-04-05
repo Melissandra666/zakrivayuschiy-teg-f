@@ -1,117 +1,97 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
-.theme-menu__button:disabled::before {
-  animation: moving 0.5s infinite ease-in-out alternate;
-}
-
-.like-icon.is-liked .heart {
-  animation: ease-in 0.3s ease-in 0.1s 1 alternate;
-}
-
-.like-icon.is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s 1 alternate;
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font-family: 'Inter', sans-serif;
+    --fantasy-font-family: 'PressStart2P', fantasy;
+    --heart_color: #FF0000;
+    --background-color: #d3d3d3;
+    --block-color: #ffffff;
+    --background-image: 
+        repeating-linear-gradient(to left, #e7e7e7 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(#e7e7e7 0 2px, transparent 2px 4px),
+        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+    --main-text-color: #000000;
+    --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --button_activity_color: var(--block-color)
 }
 
 @media (390px <= width < 1440px) {
-  .header {
-    min-inline-size: 90vw;
+    .header {
+      min-inline-size: 90vw;
+    }
   }
-}
-
-@media (width < 390px) {
-  .header {
-    min-inline-size: 100vw;
+  
+  @media (width < 390px) {
+    .header {
+      min-inline-size: 100vw;
+    }
   }
-}
-
-@media (width < 390px) {
-  .header__link {
-    font-size: 49px;
+  
+  @media (width < 390px) {
+    .header__link {
+      font-size: 49px;
+    }
   }
-}
-
-@media (390px <= width < 1440px) {
-  .header__title {
-    font-size: 18px;
+  
+  @media (390px <= width < 1440px) {
+    .header__title {
+      font-size: 18px;
+    }
   }
-}
-
-@media (width < 390px) {
-  .header__title {
-    font-size: 14px;
+  
+  @media (width < 390px) {
+    .header__title {
+      font-size: 14px;
+    }
   }
-}
-
-@media (390px <= width < 1440px) {
-  .section {
-    min-inline-size: 90vw;
+  
+  @media (390px <= width < 1440px) {
+    .section {
+      min-inline-size: 90vw;
+    }
   }
-}
-
-@media (width < 390px) {
-  .section {
-    min-inline-size: 100vw;
+  
+  @media (width < 390px) {
+    .section {
+      min-inline-size: 100vw;
+    }
   }
-}
-
-@media (width < 1440px) {
-  .card__image {
-    block-size: 100vw;
+  
+  @media (width < 1440px) {
+    .card__image {
+      block-size: 100vw;
+    }
   }
-}
-
-@media (width < 390px) {
-  .section_card__text {
-    margin: 21px 25px;
+  
+  @media (width < 390px) {
+    .section_card__text {
+      margin: 21px 25px;
+    }
   }
-}
-
-@media (1440px <= width) {
-  .main_button {
-    margin-top: -5px;
+  
+  @media (1440px <= width) {
+    .main_button {
+      margin-top: -5px;
+    }
   }
-}
-
-@media (width < 390px) {
-  .save_button {
-    flex-direction: column;
+  
+  @media (width < 390px) {
+    .save_button {
+      flex-direction: column;
+    }
   }
-}
-
-@media (width < 390px) {
-  .floppy {
-    inline-size: 28px;
-  }
-}
-
-@keyframes sparks {
-  from {
-    opacity: 0;
+  
+  @media (width < 390px) {
+    .floppy {
+      inline-size: 28px;
+    }
   }
 
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes moving {
-  from {
-    inset-inline-start: -20px;
-  }
-
-  to {
-    inset-inline-start: -16px;
+@supports (text-stroke: 1px var(--block-color)) or
+  (-webkit-text-stroke: 1px var(--block-color)) {
+  .image-logo {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--block-color);
+    text-stroke: 1px var(--block-color);
   }
 }
