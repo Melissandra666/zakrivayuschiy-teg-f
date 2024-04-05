@@ -468,7 +468,6 @@
 .dialog .floppy {
   inline-size: 39px;
   block-size: 39px;
-  mix-blend-mode: normal;
 }
 
 .ok-button {
@@ -520,5 +519,5 @@
   z-index: 1;
   mix-blend-mode: difference;
   text-transform: uppercase;
-  color: var(--main-text-color);
+  color: var(--button_activity_color);
 }
