@@ -1,18 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --main-font-family: 'Inter', sans-serif;
-    --fantasy-font-family: 'PressStart2P', fantasy;
-    --heart_color: #FF0000;
-    --background-color: #d3d3d3;
-    --block-color: #ffffff;
-    --background-image: 
-        repeating-linear-gradient(to left, #e7e7e7 0 2px, transparent 2px 4px),
-        repeating-linear-gradient(#e7e7e7 0 2px, transparent 2px 4px),
-        linear-gradient(#e7e7e7 0.01%, #1a1a1a);
-    --main-text-color: #000000;
-    --font-weight-bold: 700;
-    --font-weight-regular: 400;
-    --button_activity_color: var(--block-color)
+  --main-font-family: 'Inter', sans-serif;
+  --fantasy-font-family: 'PressStart2P', fantasy;
+  --heart_color: #FF0000;
+  --background-color: #d3d3d3;
+  --block-color: #ffffff;
+  --background-image: 
+    repeating-linear-gradient(to left, #e7e7e7 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(#e7e7e7 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --main-text-color: #000000;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --button_activity_color: var(--block-color)
 }
 
 @supports (text-stroke: 1px var(--block-color)) or
