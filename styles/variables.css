@@ -14,12 +14,3 @@
   --font-weight-regular: 400;
   --button_activity_color: var(--block-color);
 }
-
-@supports (text-stroke: 1px var(--block-color)) or
-  (-webkit-text-stroke: 1px var(--block-color)) {
-  .image-logo {
-    text-shadow: none;
-    -webkit-text-stroke: 1px var(--block-color);
-    text-stroke: 1px var(--block-color);
-  }
-}
