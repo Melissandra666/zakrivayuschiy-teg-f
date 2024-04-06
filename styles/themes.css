@@ -14,7 +14,7 @@
     --main-text-color: #000000;
     --font-weight-bold: 700;
     --font-weight-regular: 400;
-    --button_activity_color: var(--block-color)
+    --button_activity_color: var(--block-color);
 }
 
 :root.theme-dark {
@@ -41,7 +41,6 @@
         --main-text-color: #00CC14;
         --font-weight-bold: 785;
         --font-weight-regular: 465;
-        --button_activity_color: var(--main-text-color);
         --button_activity_color: var(--main-text-color);
     }
 }
