@@ -12,7 +12,7 @@
   --main-text-color: #000000;
   --font-weight-bold: 700;
   --font-weight-regular: 400;
-  --button_activity_color: var(--block-color)
+  --button_activity_color: var(--block-color);
 }
 
 @supports (text-stroke: 1px var(--block-color)) or
