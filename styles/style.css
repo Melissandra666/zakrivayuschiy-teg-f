@@ -23,7 +23,6 @@
   background-size: cover;
   font-family: var(--main-font-family), sans-serif;
   font-variation-settings: "wght" var(--font-weight-regular);
-  overflow: hidden;
 }
 
 
