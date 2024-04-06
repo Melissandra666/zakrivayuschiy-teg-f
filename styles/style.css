@@ -92,8 +92,6 @@
   cursor: pointer;
   border: transparent;
   background: transparent;
-  border: none;
-  background: none;
   font-family: var(--fantasy-font-family);
   font-style: normal;
   font-weight: var(--font-weight-regular);
